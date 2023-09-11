@@ -1,0 +1,134 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body{
+   background-color: #252323;
+   color: #fff;
+   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrapper{
+   max-width: 800px;
+   margin: 0 auto;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   @media (max-width:768px) {
+      height: auto;
+   }
+}
+.game{
+   padding: 20px;
+   text-align: center;
+   width: 100%;
+}
+.game__title{
+   letter-spacing: 3px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+.game__image{
+   display: inline-block;
+   max-width: 500px;
+   height:500px;
+   border: 10px solid #580e5f;
+   @media (max-width:768px) {
+      height: auto;
+   }
+}
+.game__image img {
+   max-width: 100%;
+   height: 100%;
+}
+.game__lable{
+   margin: 10px 0px;
+}
+
+.game__dashes{
+   color: #fff;
+   font-size: 30px;
+}
+.game__dashes span {
+   margin-right: 15px;
+}
+
+.game__input{
+   margin-top: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.game__input input{
+   height: 40px;
+   padding: 10px;
+   font-size: 16px;
+   background-color: #555050;
+   color: #fff;
+   outline: none;
+   margin-right: 10px;
+}
+.game__input button {
+   height: 40px;
+   width: 40px;
+   text-transform: uppercase;
+   background-color: #3b8a17;
+   color: #fff;
+   cursor: pointer;
+   transition: all .1s ease 0s;
+}
+.game__input button:hover {
+   background-color: #337714;
+ }
+.game__input button:active {
+  transform: scale(0.95);
+}
+
+.results{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.66);
+   display: none;
+}
+.results._open { 
+   display: block;
+}
+.results__body{
+   /* background-color: #ff0000; */
+   color: #000;     
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   padding: 30px;
+   text-align: center;
+   transform: translate(-50%,-50%);  
+   font-size: 20px;  
+}
+.results__message p {
+   margin-bottom: 20px;
+}
+.results__btn{
+   background-color: #ebe711;
+   font-size: 20px;
+   padding: 10px;
+   color: #000000;
+   cursor: pointer;
+}
+.results__btn:hover{
+   background-color: #c0bd10;
+}
+.results__btn:active{
+   transform: scale(0.95);
+}
